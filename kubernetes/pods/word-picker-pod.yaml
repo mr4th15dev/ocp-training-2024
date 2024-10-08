@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: word-picker-custom
+  labels:
+    app: word-picker 
+    custom: "yes"
+spec:
+  containers:
+  - image: tinmancoding/word-picker:v1
+    name: word-picker
